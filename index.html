@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>New News — Berita Terkini</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="preloader">
+    <div class="pre-word"><span style="animation-delay:0.00s">N</span><span style="animation-delay:0.07s">E</span><span style="animation-delay:0.14s">W</span><span style="animation-delay:0.21s">&nbsp;</span><span style="animation-delay:0.28s" class="b">N</span><span style="animation-delay:0.35s" class="b">E</span><span style="animation-delay:0.42s" class="b">W</span><span style="animation-delay:0.49s" class="b">S</span></div>
+    <div class="loader"></div>
+    <h2>Memuat berita...</h2>
+    <p>Sedang mengambil berita terbaru</p>
+    <div class="pre-count">0%</div>
+</div>
+
+<div id="progress"></div>
+<div id="glow"></div>
+<div class="aurora"><i></i><i></i><i></i></div>
+
+<header>
+    <a class="logo" href="#">new <em>news</em></a>
+    <input id="cari" type="search" placeholder="Cari berita…" autocomplete="off">
+    <button id="tema" aria-label="Ganti tema">◐</button>
+</header>
+
+<div class="ticker"><div id="ticker-track"></div></div>
+
+<main>
+    <section id="hero"></section>
+    <nav id="tabs"></nav>
+    <div id="berita"></div>
+    <p id="kosong" hidden>Tidak ada berita yang cocok 🫥</p>
+</main>
+
+<footer>Dibuat dengan ♥ — data dari berita-indo-api</footer>
+<script src="script.js"></script>
+</body>
+</html>
